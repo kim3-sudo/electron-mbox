@@ -1,0 +1,19 @@
+{
+  "name": "electron-mbox",
+  "productName": "MBOX Viewer",
+  "version": "0.0.1",
+  "description": "A minimal Electron viewer for MBOX files",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "author": "Sejin Kim",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^20.2.0"
+  },
+  "dependencies": {
+    "mbox-reader": "^1.1.5"
+  }
+}

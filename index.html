@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./styles.css" rel="stylesheet">
+    <link href="./assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <title>MBOX Viewer</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>MBOX Viewer</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form>
+                    <div class="form-group">
+                        <label for="mboxfile" class="form-label">Select an MBOX file.</label>
+                        <input class="form-control" type="file" id="mboxFile" required />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Go</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+    <script src="./assets/bootstrap/bootstrap.min.js"></script>
+  </body>
+</html>
